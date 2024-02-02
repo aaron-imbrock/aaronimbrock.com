@@ -9,7 +9,7 @@
 
 We're assuming a Debian derivitive here. Additionally we'll be using `Let's Encrypt!` and `NGINX`.
 
-0. Configure DNS so that the A Record points to your IP Address.
+0. Configure DNS so that the A Record points to your IP Address. Set a very low TTL until you're sure everything's working.
 1. `sudo apt install certbot python3-certbot-nginx`
 2. Confirm the existing `server_name` line is correct:
 ```bash
