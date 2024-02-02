@@ -1,7 +1,22 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Aaron Imbrock";
+import BaseLayout from '../layouts/BaseLayout.astro'
+import BlogPost from '../components/BlogPost.astro';
+const allPosts = await Astro.glob('../pages/writing/*.md');
+const pageTitle = "Writings";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+  <p>This is where I will post about my journey learning Astro.</p>
+  <ul>
+    {allPosts
+    .sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate))
+    .map((post) => {
+      return (
+        <BlogPost
+          pubdate={post.frontmatter.pubDate.slice(0,10)}
+          url={post.url}
+          title={post.frontmatter.title} 
+        />
+        );
+        })}
+  </ul>
 </BaseLayout>
