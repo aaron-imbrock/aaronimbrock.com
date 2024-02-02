@@ -5,6 +5,7 @@
 ```sh
 npm create astro@latest -- --template minimal
 ```
+
 Tweaked version of the Astro Blog set up for use as a template.
 
 ## 🚀 Project Structure
