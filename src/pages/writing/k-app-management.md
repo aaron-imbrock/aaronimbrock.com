@@ -36,7 +36,7 @@ If you don't specify a deployment strategy Kubernetes will default to `rolling u
 
 How exactly do you upgrade your deployment?
 
-```text
+```plaintext
 
 
 ```
@@ -56,7 +56,7 @@ Waiting for rollout to finish: 9 of 10 updated replicas are available...
 deployment "myapp-deployment" successfully rolled out
 ```
 
-```text
+```plaintext
 > kubectl rollout history deployment/myapp-deployment
 deployments "myapp-deployment"
 REVISION CHANGE-CAUSE
@@ -67,7 +67,7 @@ REVISION CHANGE-CAUSE
 
 ### Apply
 
-```text
+```plaintext
 > kubectl apply –f deployment-definition.yml
 deployment "myapp-deployment" configured
 ```
@@ -84,7 +84,7 @@ deployment "myapp-deployment" image is updated
 
 ### Recreate and Rolling Updates
 
-```text
+```plaintext
 > kubectl get replicasets
 NAME DESIRED CURRENT READY AGE
 myapp-deployment-67c749c58c 0 0 0 22m
