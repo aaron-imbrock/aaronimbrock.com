@@ -10,11 +10,22 @@ image:
 tags: ["todo"]
 ---
 
-Here I track issues, ideas for the future, possible improvements. Anything blog related.
-
-2024-01-03
+Here I track issues, closed PRs, ideas for the future, and possible improvements. Anything blog related.
 
 ---
+
+## [Closed PRs on GitHub](https://github.com/aaron-imbrock/aaronimbrock.com/pulls?q=is%3Apr)
+
+## Open Issues
+
+### 2024-02-08
+
+- [ ] Issue 1
+  - **Issue:** Nav Bar is out of alignment.
+  - 
+  - **Solution:** -
+
+### 2024-01-03
 
 - [x] Issue 1
   - **Issue:** Generate tag based pages doesn't work 
