@@ -1,8 +1,7 @@
 ---
-const { email, platform } = Astro.props;
+const { platform, username } = Astro.props;
 ---
-
-<a href={`{email}`}>{platform}</a>
+<a href={`mailto:${username}`}>{platform}</a>
 
 <style>
   a {
