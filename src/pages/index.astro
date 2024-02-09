@@ -5,7 +5,9 @@ const allPosts = await Astro.glob('../pages/writing/*.md');
 const pageTitle = "Writings";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
+  <h2>Notes, code snippets, and reminders related to technology and personal development.</h2>
+  <p>Welcome to my small corner of the internet.</p>
+  <p>I love discourse and hearing other's perspectives, my contact info is below.</p>
   <ul>
     {allPosts
     .sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate))
