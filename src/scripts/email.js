@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const emailSpan = document.getElementById("email");
   if (emailSpan) {
-    // const emailLink = document.createElement("a");
     const emailLink = emailSpan;
     console.log(emailLink);
     emailLink.href = `mailto:${email}`;
