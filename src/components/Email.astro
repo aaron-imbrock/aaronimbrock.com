@@ -1,14 +1,18 @@
 ---
-const { email, platform } = Astro.props;
+const { platform, username } = Astro.props;
 ---
+<<<<<<< Updated upstream
+<a href={`mailto:${username}`}>{platform}</a>
+=======
 
-<a href={`{email}`}>{platform}</a>
+<a id="email">{platform}</a>
+>>>>>>> Stashed changes
 
 <style>
-  a {
-    padding: 0.5rem 1rem;
-    color: white;
-    background-color: #4c1d95;
-    text-decoration: none;
-  }
+    a {
+        padding: 0.5rem 1rem;
+        color: white;
+        background-color: #4c1d95;
+        text-decoration: none;
+    }
 </style>
