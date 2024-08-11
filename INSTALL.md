@@ -27,6 +27,26 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+## Deploy Process
+
+1. Clone Repo
+2. cd to repo folder and run `npm i`.
+3. run `npm run build` - which will build your production site to `./dist/`.
+4. `rsync -avHP . aaronimbrock.com:/var/www/aaronimbrock.com/html/`
+
+### Note
+
+If you see this, you didn't run `npm i`:
+
+```linux
+$ npm run build
+
+> aaronimbrock.com@0.0.1 build
+> astro build
+
+sh: line 1: astro: command not found
+```
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -40,12 +60,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## Deploy Process
 
-1. Clone Repo
-2. cd to repo folder and run `npm i`.
-3. run `npm run build` - which will build your production site to ./dist/
-4. `rsync -avHP . aaronimbrock.com:/var/www/aaronimbrock.com/html/`
 
 ## SSL Setup
 
