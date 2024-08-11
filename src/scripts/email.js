@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const user = "aaron";
-  const domain = "sizza";
-  const tld = "net";
+  const domain = "aaronimbrock";
+  const tld = "com";
   const subject = "Website Hello";
 
   const email = `${user}@${domain}.${tld}?subject=${subject}`;
