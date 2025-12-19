@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=yes" />
+
+  <title>Aaron Imbrock - Developer & Maker</title>
+
+  <!-- Prevent mobile browsers (especially Safari on iOS) from automatically detecting and linking phone numbers -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- this is the default, send referrer to HTTPS sites, but not when going from HTTPS to HTTP -->
+  <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <!-- Primary Meta Tags -->
   <title>Aaron Imbrock - Developer & Maker</title>
@@ -13,10 +20,13 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://aaronimbrock.com/" />
   <meta property="og:title" content="Aaron Imbrock" />
   <meta property="og:description" content="The personal website of Aaron Imbrock" />
   <meta property="og:image" content="https://aaronimbrock.com/og-image.jpg" />
+  <!-- Redundant as Social Media will list name twice -->
+  <!-- <meta property="og:site_name" content="New York Times" /> -->
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
@@ -38,8 +48,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-
-  <title>Aaron Imbrock - Developer & Maker</title>
 </head>
 
 <body>
