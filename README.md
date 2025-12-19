@@ -1,7 +1,5 @@
-# aaronimbrock.com
+# HTML CSS JS Template
 
-It's my website.
+Starting point for all static website needs.
 
-## Notes
-
-- [Install](./INSTALL.md)
+Rendered template [looks like this](https://aaron-imbrock.github.io/html_css_js-template/)
